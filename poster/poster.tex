@@ -1,0 +1,142 @@
+\documentclass[final]{beamer}
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguages{russian,czech} % \textlang{russian}{ы}
+
+%\usepackage[size=custom,width=84.1,height=118.9,scale=1.4]{beamerposter}
+\usepackage[orientation=portrait,size=a0,scale=1.17]{beamerposter}
+
+\usetheme{gemini}
+\usecolortheme{gemini}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{siunitx} % units typesetting
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+%\newlength{\sepwidth}
+%\newlength{\colwidth}
+%\setlength{\sepwidth}{0.025\paperwidth}
+%\setlength{\colwidth}{0.3\paperwidth}
+
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.47\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+\title{Comparing the effect of artificial drought and crown reduction on tree ring response in sessile oak and Norway spruce seedlings}
+\author{Sergei Mikhailov \inst{1-3} \and Janko Arsic \inst{2}}
+
+\institute[MendelU]{\inst{1} Department of Wood Science and Technology, Mendel University in Brno, CZ \samelineand \inst{2} Department of Xylogenesis and Biomass Allocation, CzechGlobe, CZ \\ \inst{3} Laboratory of Ecology of Plant Communities, Komarov Botanical Institute of the Russian Academy of Sciences, Saint Petersburg, RU}
+%\institute[MendelU]{\inst{1} Department of Xylogenesis and Biomass Allocation, CzechGlobe, Brno, Czech Republic \samelineand \inst{2} Department of Wood Science and Technology, Mendel University in Brno, Brno, Czech Republic \samelineand \inst{3} Laboratory of Ecology of Plant Communities, Komarov Botanical Institute of the Russian Academy of Sciences, Saint Petersburg, Russian Federation}
+
+\footercontent{
+    %\includegraphics[height=3cm]{pics/qr}
+    %{\LaTeX} \& R code in git repo \hfill
+    \hspace{0cm} TRACE 2023, Coimbra \hfill
+    %\href{https://www.github.com/aplantc0}{github.com/aplantc0}
+    \includegraphics[height=3cm]{pics/logo_czechglobe}
+    \includegraphics[height=3cm]{pics/logo_mendelu}
+    %\href{mailto:mikhailov.s@czechglobe.cz}{mikhailov.s@czechglobe.cz}
+    % (can be left out to remove footer)
+}
+
+% use this to include logos on the left and/or right side of the header:
+%\logoleft{\includegraphics[height=7cm]{pics/logo_mendelu}}
+%\logoright{\includegraphics[height=5cm]{pics/logo_czechglobe}}
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+
+%\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{alertblock}{Hypotheses and questions}
+    We analyzed anatomical response of Norway spruce and sessile oak three-year-old seedlings to crown reduction and hydrogel application. Our results indicated contrasting biomass allocation patterns in the two species. Our results demonstrate... We hypothesized that:
+    \begin{enumerate}
+        \item item 1
+        \item item 2
+        \item item 3 
+    \end{enumerate}
+\end{alertblock}
+
+\begin{block}{Methodology}
+    \heading{Experimental design}
+        asdasd
+    \heading{Watering}
+        asdasd
+    \heading{Wood anatomy}
+        asdadsads
+    \heading{Site conditions}
+        T, RH, \Psi\textsubscript{Soil}, sap flow (Figure \ref{fig:sap}).
+        \begin{figure}
+            %%\centering \includegraphics[width=1\textwidth]{}
+            \caption{}
+            \label{fig:sob}
+        \end{figure}
+\end{block}
+
+\begin{block}{}
+        \begin{figure}
+            %%\centering \includegraphics[width=1\textwidth]{}
+            \caption{}
+            \label{fig:sap}
+        \end{figure}
+\end{block}
+
+\end{column}
+
+%\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{block}{Results}
+    \heading{Norway spruce}
+        \begin{figure}
+            %%\centering \includegraphics[width=1\textwidth]{}
+            \caption{}
+            \label{fig:hf}
+        \end{figure}
+    \heading{Sessile oak}
+        \begin{figure}
+            \centering \includesvg[width=0.8\textwidth]{pics/oak}
+            \caption{TD -- tracheid diameter, \si{\micro\meter}; CWT -- cell wall thickness, \si{\micro\meter}; EW -- early wood; LW -- late wood (classified according to Mork's criteria)}
+            \label{fig:xmg}
+        \end{figure}
+\end{block}
+
+\begin{block}{Conclusions}
+    \begin{enumerate}
+        \item item 1
+        \item item 2
+        \item item 3
+        \item item 4
+    \end{enumerate}
+
+\end{block}
+
+\end{column}
+\end{columns}
+
+
+\begin{columns}[c]
+\begin{column}{0.96\paperwidth}
+    \small \centering This outcome was supported by the Internal Grant Schemes of Mendel University in Brno, registration no.: CZ.02.2.69/0.0/0.0/19\_073/0016670, funded by the ESF.
+\end{column}
+%
+%%\separatorcolumn
+%
+\end{columns}
+\end{frame}
+
+\end{document}
