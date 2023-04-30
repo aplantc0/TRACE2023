@@ -72,17 +72,25 @@
 
 \begin{block}{Methodology}
     \heading{Experimental design}
-        asdasd
-    \heading{Watering}
-        asdasd
-    \heading{Wood anatomy}
-        asdadsads
-    \heading{Site conditions}
-        T, RH, \Psi\textsubscript{Soil}, sap flow (Figure \ref{fig:sap}).
+        T, RH, \Psi\textsubscript{Soil}, VWC (Figure \ref{fig:vwc}). Seedling substrate. Wood anatomy at the end of experiment.
         \begin{figure}
-            %%\centering \includegraphics[width=1\textwidth]{}
-            \caption{}
-            \label{fig:sob}
+            \begin{minipage}{0.45\textwidth}
+                \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_sm}
+                \caption{Norway spruce seedlings at the end of the experiment}
+                \label{fig:db}
+            \end{minipage}\hfill
+            \begin{minipage}{0.45\textwidth}
+                \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_db}
+                \caption{Sessile oak seedlings at the end of the experiment}
+                \label{fig:sm}
+            \end{minipage}\hfill
+        \end{figure}
+    \heading{Site conditions}
+        \begin{figure}
+            %\centering \includegraphics[width=1.0\textwidth]{pics/vwc.pdf}
+            \input{pics/vwc.tex}
+            \caption{Volumetric water content (\%) for the second year of the experiment}
+            \label{fig:vwc}
         \end{figure}
 \end{block}
 
@@ -101,20 +109,33 @@
 \begin{column}{\colwidth}
 
 \begin{block}{Results}
-    \heading{Norway spruce}
+    \heading{Wood anatomy}
         \begin{figure}
-            %%\centering \includegraphics[width=1\textwidth]{}
-            \caption{}
-            \label{fig:hf}
-        \end{figure}
-    \heading{Sessile oak}
-        \begin{figure}
-            \centering \includesvg[width=0.8\textwidth]{pics/oak}
-            \caption{TD -- tracheid diameter, \si{\micro\meter}; CWT -- cell wall thickness, \si{\micro\meter}; EW -- early wood; LW -- late wood (classified according to Mork's criteria)}
-            \label{fig:xmg}
+            \begin{minipage}{0.45\textwidth}
+                \centering \includegraphics[height=30cm]{pics/anatomy/anatomy_sm}
+                \caption{Spruce wood anatomy. Scale bar -- $x$ \si{\micro\meter}}
+                \label{fig:anatomy_sm}
+            \end{minipage}\hfill
+            \begin{minipage}{0.45\textwidth}
+                \centering \includegraphics[height=30cm]{pics/anatomy/anatomy_db}
+                \caption{Sessile oak wood anatomy. Scale bar -- $x$ \si{\micro\meter}}
+                \label{fig:anatomy_db}
+            \end{minipage}\hfill
         \end{figure}
 \end{block}
+    \heading{Oak wood anatomy boxplot}
+        \begin{figure}
+            %\centering \includesvg[width=0.8\textwidth]{pics/oak_2021}
+            \input{pics/oak_box.tex}
+            \caption{TD -- tracheid diameter, \si{\micro\meter}; CWT -- cell wall thickness, \si{\micro\meter}; EW -- earlywood; LW -- latewood (classified according to Mork's criteria)}
+            \label{fig:xmg}
+        \end{figure}
 
+\end{column}
+\end{columns}
+
+\begin{columns}[c]
+\begin{column}{0.96\paperwidth}
 \begin{block}{Conclusions}
     \begin{enumerate}
         \item item 1
@@ -122,16 +143,8 @@
         \item item 3
         \item item 4
     \end{enumerate}
-
 \end{block}
-
-\end{column}
-\end{columns}
-
-
-\begin{columns}[c]
-\begin{column}{0.96\paperwidth}
-    \small \centering This outcome was supported by the Internal Grant Schemes of Mendel University in Brno, registration no.: CZ.02.2.69/0.0/0.0/19\_073/0016670, funded by the ESF.
+\small \centering This outcome was supported by the Internal Grant Schemes of Mendel University in Brno, registration no.: CZ.02.2.69/0.0/0.0/19\_073/0016670, funded by the ESF.
 \end{column}
 %
 %%\separatorcolumn
