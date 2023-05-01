@@ -1,5 +1,6 @@
 EDITOR = vim
 file = poster
+export MAGICK_TMPDIR=${HOME} # /tmp is too small for imagemagick cache
 
 compile:
 	latexmk -lualatex --shell-escape ${file}.tex
