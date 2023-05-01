@@ -16,14 +16,14 @@ sm:
 		-mode concatenate -crop x10000+0+0 \
 		-resize x1500+2+2 \
 		-tile 4x2 \
-		-geometry +0+80 \
+		-geometry +10+10 \
 		anatomy_sm.jpg
 	mogrify -colorspace GRAY -channel RGB anatomy_sm.jpg
 
 db:
 	montage -verbose \
 		-gravity North \
-		-pointsize 120 \
+		-pointsize 140 \
 		-label 'd' d_db*  \
 		-label 'dh' dh_db* \
 		-label 'dr' dr_db* \
@@ -32,9 +32,9 @@ db:
 		-label 'wh' wh_db* \
 		-label 'wr' wr_db* \
 		-label 'whr' whr_db* \
-		-mode concatenate -crop x2000+200+50 \
-		-resize 1500x+2+2 \
+		-mode concatenate -crop 1500x2000+50+250 \
+		-resize x1500+2+2 \
 		-tile 2x4 \
-		-geometry +0+90 \
+		-geometry +10+10 \
     	anatomy_db.jpg
 	mogrify -colorspace GRAY -channel RGB anatomy_db.jpg
