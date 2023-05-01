@@ -1,10 +1,33 @@
-#montage -verbose -geometry 500x500+2+2 -tile 4x2 \
-
 all: db sm
-db:
-	montage -verbose -mode concatenate -crop 2500x2500+500+1500 -resize 500x500+2+2 -tile 4x2 \
-    	d_db* dh_db* dr_db* dhr_db* w_db* wh_db* wr_db* whr_db* seedlings_db.jpg
 
 sm:
-	montage -verbose -mode concatenate -crop 2000x2000+500+1500 -resize 500x500+2+2 -tile 4x2 \
-    	d_sm_* dh_sm* dr_sm* dhr_sm* w_sm* wh_sm* wr_sm* whr_sm* seedlings_sm.jpg
+	montage -verbose \
+		-gravity North \
+		-pointsize 70 \
+		-label d d_sm*  \
+		-label dh dh_sm* \
+		-label dr dr_sm* \
+		-label dhr dhr_sm* \
+		-label w w_sm* \
+		-label wh wh_sm* \
+		-label wr wr_sm* \
+		-label whr whr_sm* \
+		-mode concatenate -crop 2000x2000+500+1500 \
+		-resize 500x500+2+2 -tile 4x2 \
+		 seedlings_sm.jpg
+
+db:
+	montage -verbose \
+		-gravity North \
+		-pointsize 70 \
+		-label d d_db*  \
+		-label dh dh_db* \
+		-label dr dr_db* \
+		-label dhr dhr_db* \
+		-label w w_db* \
+		-label wh wh_db* \
+		-label wr wr_db* \
+		-label whr whr_db* \
+		-mode concatenate -crop 2500x2500+500+1500 \
+		-resize 500x500+2+2 -tile 4x2 \
+		 seedlings_db.jpg
