@@ -5,7 +5,7 @@
 \setotherlanguages{russian,czech} % \textlang{russian}{ы}
 
 %\usepackage[size=custom,width=84.1,height=118.9,scale=1.4]{beamerposter}
-\usepackage[orientation=portrait,size=a0,scale=1.00]{beamerposter}
+\usepackage[orientation=portrait,size=a0,scale=1.20]{beamerposter}
 
 \usetheme{gemini}
 \usecolortheme{gemini}
@@ -17,6 +17,22 @@
 %\usepackage{pgfplots}
 %\pgfplotsset{compat=1.14}
 \usepackage{siunitx} % units typesetting
+
+% biblio
+\usepackage[ 
+    bibencoding=auto, 
+    autolang=other, 
+    backend=biber, 
+    natbib=true,
+    citestyle=authoryear, 
+    bibstyle=authoryear, 
+    sorting=nty,
+    ]{biblatex}
+\addbibresource{$BIB} % \textcite{} or \parencite{}
+%\addbibresource{poster.bib}
+\setbeamertemplate{bibliography item}{} % !
+
+\setbeamerfont{caption}{size=\footnotesize}
 
 % If you have N columns, choose \sepwidth and \colwidth such that
 % (N+1)*\sepwidth + N*\colwidth = \paperwidth
@@ -90,7 +106,7 @@
     \begin{minipage}[t]{0.45\textwidth}
         \begin{figure}
             \input{pics/vwc.tex}
-            \caption{Volumetric water content (\%) for the second year of the experiment. Measured at \SI{30}{\centi\meter} depth; 3 measurements per treatment}
+            \caption{Volumetric water content (\%) for the second year of the experiment (2022). Measured at \SI{30}{\centi\meter} depth}
             \label{fig:vwc}
         \end{figure}
     \end{minipage}\hfill
@@ -111,11 +127,8 @@
 \end{block}
 
 \begin{block}{Results}
-   \begin{figure}
-       %%\centering \includegraphics[width=1\textwidth]{}
-       \caption{}
-       \label{fig:sap}
-   \end{figure}
+ajsdadasjd \textcite{vaganov1990}
+
 \end{block}
 
 \end{column}
@@ -128,19 +141,19 @@
 \heading{Wood anatomy}
     \begin{figure}
         \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[height=30cm]{pics/anatomy/anatomy_db}
+            \centering \includegraphics[height=25cm]{pics/anatomy/anatomy_db}
             \caption*{Sessile oak cross-sections}
             \label{fig:anatomy_db}
         \end{minipage}\hfill
         \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[height=30cm]{pics/anatomy/anatomy_sm}
+            \centering \includegraphics[height=25cm]{pics/anatomy/anatomy_sm}
             \caption*{Spruce wood cross-sections}
             \label{fig:anatomy_sm}
         \end{minipage}\hfill
         \caption{\SI{10}{\micro\meter}-thin transverse microsections of sessile oak (left) and Norway spruce (right) were cut on a rotary microtome and double-stained with safranin and Astra blue. Scale bar: sessile oak -- \SI{}{\micro\meter}; Norway spruce -- \SI{}{\micro\meter}}
     \end{figure}
 \heading{Oak wood anatomy boxplot}
-Since Norway spruce didn't express much changes in xylem structure, we only present sessile oak xylem metrics.
+    Since Norway spruce didn't exhibit much change in xylem structure, we only present sessile oak xylem metrics for the second year of the experiment (2022).
     \begin{figure}
         %\centering \includesvg[width=0.8\textwidth]{pics/oak_2021}
         \input{pics/oak_box.tex}
@@ -168,20 +181,14 @@ Since Norway spruce didn't express much changes in xylem structure, we only pres
 
 \begin{columns}[c]
 \begin{column}{0.96\paperwidth}
-\begin{block}{Conclusions}
+
+\begin{block}{Discussion}
     \begin{enumerate}
-        %\item item 1 \cite{impj}
+        \item Xylem vulnerability index after Carlquist suggests high degree of xeromorphy for dry variants (\leqslant 1) and mesomorphy for wet ones (\geqslant 3).
         \item item 2
-        \item item 3
-        \item item 4
     \end{enumerate}
 
-%\begin{thebibliography}{1}
-%    \bibitem{notes} John W. Dower {\em Readings compiled for History
-%    21.479.}  1991.
-%    \bibitem{impj}  The Japan Reader {\em Imperial Japan 1800-1945} 1973:
-%    Random House, N.Y.
-%\end{thebibliography}
+\footnotesize \printbibliography
 \end{block}
 
 \begin{block}{Acknoledgements}
