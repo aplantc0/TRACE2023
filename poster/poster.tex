@@ -23,14 +23,19 @@
     bibencoding=auto, 
     autolang=other, 
     backend=biber, 
-    natbib=true,
-    citestyle=authoryear, 
-    bibstyle=authoryear, 
-    sorting=nty,
+    %citestyle=authoryear, 
+    %bibstyle=authoryear, 
+    style=numeric,
+    doi=false,
+    isbn=false,
+    url=false,
+    eprint=false,
+    %sorting=nty,
+    sorting=none,
     ]{biblatex}
 \addbibresource{$BIB} % \textcite{} or \parencite{}
 %\addbibresource{poster.bib}
-\setbeamertemplate{bibliography item}{} % !
+\setbeamertemplate{bibliography item}[text] % ! article etc.
 
 \setbeamerfont{caption}{size=\footnotesize}
 
@@ -126,11 +131,6 @@
     \end{minipage}\hfill
 \end{block}
 
-\begin{block}{Results}
-ajsdadasjd \textcite{vaganov1990}
-
-\end{block}
-
 \end{column}
 
 %\separatorcolumn
@@ -141,12 +141,12 @@ ajsdadasjd \textcite{vaganov1990}
 \heading{Wood anatomy}
     \begin{figure}
         \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[height=25cm]{pics/anatomy/anatomy_db}
+            \centering \includegraphics[width=20cm]{pics/anatomy/anatomy_db}
             \caption*{Sessile oak cross-sections}
             \label{fig:anatomy_db}
         \end{minipage}\hfill
         \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[height=25cm]{pics/anatomy/anatomy_sm}
+            \centering \includegraphics[width=18cm]{pics/anatomy/anatomy_sm}
             \caption*{Spruce wood cross-sections}
             \label{fig:anatomy_sm}
         \end{minipage}\hfill
@@ -160,16 +160,16 @@ ajsdadasjd \textcite{vaganov1990}
         \caption{
             Xylem metrics of sessile oak xylem for the ring of 2022.
             \textbf{a)} tree-ring width, \si{\micro\meter};
-            \textbf{b)} hydraulic vessel diameter, \si{\micro\meter};
+            \textbf{b)} hydraulic vessel diameter, \si{\micro\meter} \parencite{tyree2002};
             \textbf{c)} mean vessel area, \si{\micro\meter\squared};
             \textbf{d)} total vessel lumen area, \%;
-            \textbf{e)} vessel density, \si{\micro\meter};
-            \textbf{f)} vulnerability index after Carlquist. \\
-            \textbf{Dark grey fill} -- dry (wet) variant without treatment;
-            \textbf{light grey fill} -- dry (wet) variant with treatment. No sign. difference from dry (wet) variant without treatment;
-            \textbf{pink fill} -- dry (wet) variant with treatment. Sign. difference from dry (wet) variant without treatment;
-            \textbf{black outline} -- treatment of dry (wet) variant \emph{is not} sign. different from (wet) variant of the same treatment;
-            \textbf{red outline} -- treatment of dry (wet) variant \emph{is} sign. different from (wet) variant of the same treatment.
+            \textbf{e)} vessel density, \si{\per\milli\meter\squared};
+            \textbf{f)} vulnerability index after Carlquist \parencite{carlquist1977}. \\
+            \textbf{\textcolor{darkgray}{Dark grey fill}} -- dry (wet) variant without treatment;
+            \textbf{\textcolor{gray}{light grey fill}} -- dry (wet) variant with treatment. No sign. difference from dry (wet) variant without treatment;
+            \textbf{\textcolor{pink}{pink fill}} -- dry (wet) variant with treatment. Sign. difference from dry (wet) variant without treatment;
+            \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sign. different from (wet) variant of the same treatment;
+            \textbf{\textcolor{blue}{blue outline}} -- treatment of dry (wet) variant \emph{is} sign. different from (wet) variant of the same treatment.
             $\alpha = 0.1$
         }
         \label{fig:oak_box}
@@ -184,12 +184,14 @@ ajsdadasjd \textcite{vaganov1990}
 
 \begin{block}{Discussion}
     \begin{enumerate}
-        \item Xylem vulnerability index after Carlquist suggests high degree of xeromorphy for dry variants (\leqslant 1) and mesomorphy for wet ones (\geqslant 3).
-        \item item 2
+        \item Xylem vulnerability index after Carlquist \parencite{carlquist1977} suggests high degree of xeromorphy for dry variants (\leqslant 1) and mesomorphy for wet ones (\geqslant 3).
+        \item 2222
     \end{enumerate}
 
 \footnotesize \printbibliography
 \end{block}
+
+\vfill
 
 \begin{block}{Acknoledgements}
 \small \centering

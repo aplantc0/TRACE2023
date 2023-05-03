@@ -13,7 +13,7 @@ sm:
 		-label wh wh_sm* \
 		-label wr wr_sm* \
 		-label whr whr_sm* \
-		-mode concatenate -crop x10000+0+0 \
+		-mode concatenate -crop x5000+0+0 \
 		-resize x1500+2+2 \
 		-tile 4x2 \
 		-geometry +10+10 \
@@ -34,7 +34,7 @@ db:
 		-label 'whr' whr_db* \
 		-mode concatenate -crop 1500x2000+50+250 \
 		-resize x1500+2+2 \
-		-tile 2x4 \
+		-tile 4x2 \
 		-geometry +10+10 \
     	anatomy_db.jpg
 	mogrify -colorspace GRAY -channel RGB anatomy_db.jpg
