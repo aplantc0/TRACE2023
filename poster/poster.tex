@@ -61,8 +61,8 @@
 %\institute[MendelU]{\inst{1} Department of Xylogenesis and Biomass Allocation, CzechGlobe, Brno, Czech Republic \samelineand \inst{2} Department of Wood Science and Technology, Mendel University in Brno, Brno, Czech Republic \samelineand \inst{3} Laboratory of Ecology of Plant Communities, Komarov Botanical Institute of the Russian Academy of Sciences, Saint Petersburg, Russian Federation}
 
 \footercontent{
-    \includegraphics[height=3cm]{pics/qr}
-    {\LaTeX} \& R code in git repo \hfill
+    %\includegraphics[height=3cm]{pics/qr}
+    %{\LaTeX} \& R code in git repo \hfill
     \hspace{0cm} TRACE 2023, Coimbra \hfill
     %\href{https://www.github.com/aplantc0}{github.com/aplantc0}
     \includegraphics[height=3cm]{pics/logo_czechglobe}
@@ -88,7 +88,7 @@
     \heading{Summary}
     We analyzed the anatomical response of \textit{Quercus petraea} (Matt.) Liebl. (sessile oak; ring-porous) and \textit{Picea abies} (L.) H. Karst. (Norway spruce; conifer) and three-year-old seedlings to crown reduction and application of hydrogel in substrate. Our results demonstrate contrasting biomass allocation patterns in the two species.
     \heading{Context}
-    \small
+    %\small
     \begin{itemize}
         \item Following extensive deforestation caused by tree mortality, it is essential to have robust regeneration material that can withstand the initial establishment shock and effectively restore the area.
         \item In a short-term experiment we treated 3-year-old plants with hydrogel (\textbf{h}) application in substrate and 50\% crown reduction (\textbf{r}), and followed their development in dry (\textbf{d}) and wet (\textbf{w}) conditions over a two-year period (2021--2022).
@@ -97,50 +97,65 @@
 \end{alertblock}
 
 \begin{block}{Methodology}
-%\heading{Site conditions}
-    \begin{minipage}[t]{0.45\textwidth}
-        \begin{figure}
-            \input{pics/vwc.tex}
-            \caption{Volumetric water content (\%) for the second year of the experiment (2022). Measured at \SI{30}{\centi\meter} depth}
-            \label{fig:vwc}
-        \end{figure}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.45\textwidth}
-        The experiment lasted from May, 2021 to September, 2022.
-        Different soil water conditions were maintained for \textbf{d} and \textbf{w} treatment groups.
-        T, RH, \Psi\textsubscript{Soil}, volumetric water content (Fig. \ref{fig:vwc}) were measured at the site.
-        At the end of experiment, \SI{10}{\micro\meter}-thin transverse sections were cut on a rotary microtome and double-stained with safranin and Astra blue (Fig. \ref{fig:anatomy}).
-        For sessile oak, several xylem metrics related to vessels were measured and derived (Fig. \ref{fig:oak_box}).
-        For Norway spruce, tracheidograms of radial cell-wall thinkness and radial tracheid diameter were built.
-
-        Treatments are coded as follows:
-        \begin{tabbing}
-            \textbf{d}: \quad\= dry \kill
-            \textbf{d}: \> dry \\
-            \textbf{dh}: \> dry + hydrogel \\
-            \textbf{dr}: \> dry + crown reduction\\
-            \textbf{dhr}: \> dry + hydrogel + crown reduction \\
-            \textbf{w}: \> wet \\
-            \textbf{wh}: \> wet + hydrogel \\
-            \textbf{wr}: \> wet + crown reduction\\
-            \textbf{whr}: \> wet + hydrogel + crown reduction
-        \end{tabbing}
-    \end{minipage}\hfill
-
-%\heading{Experimental design}
+\heading{Experimental design}
+\begin{minipage}[t]{0.45\textwidth}
     \begin{figure}
-        \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_db}
-            \caption{Sessile oak seedlings at the end of the experiment}
-            \label{fig:sm}
-        \end{minipage}\hfill
-        \begin{minipage}{0.45\textwidth}
-            \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_sm}
-            \caption{Norway spruce seedlings at the end of the experiment}
-            \label{fig:db}
-        \end{minipage}\hfill
+        \input{pics/vwc.tex}
+        \caption{Volumetric water content (\%) for the second year of the experiment (2022). Measured at \SI{30}{\centi\meter} depth}
+        \label{fig:vwc}
     \end{figure}
+\end{minipage}\hfill
+\normalsize
+\begin{minipage}[t]{0.45\textwidth}
+    %\small
+    The experiment lasted from May, 2021 to September, 2022.
+    Different soil water conditions were maintained for \textbf{d} and \textbf{w} treatment groups (Fig. \ref{fig:vwc}).
+    At the experiment destruction, \SI{10}{\micro\meter}-thin transverse sections were cut on a rotary microtome and double-stained with safranin and Astra blue (Fig. \ref{fig:anatomy}).
+    Anatomical analysis was carried out for both rings of 2021 and 2022 in both species.
+    %In sessile oak, vessel area was measured and several related xylem metrics were derived (Fig. \ref{fig:oak_box}). In Norway spruce, radial cell wall thinkness and radial tracheid diameter were measured in three radial cell files, and were analyzed separately for early- and latewood (Fig. \ref{fig:spruce_box}).
 
+%Treatments are coded as follows:
+\begin{tabbing}
+    \textbf{d}: \quad\= dry \kill
+    \textbf{d}: \> dry \\
+    \textbf{dh}: \> dry + hydrogel \\
+    \textbf{dr}: \> dry + crown reduction\\
+    \textbf{dhr}: \> dry + hydrogel + crown reduction \\
+    \textbf{w}: \> wet \\
+    \textbf{wh}: \> wet + hydrogel \\
+    \textbf{wr}: \> wet + crown reduction\\
+    \textbf{whr}: \> wet + hydrogel + crown reduction
+\end{tabbing}
+\end{minipage}\hfill
+
+%\begin{figure}
+    %\begin{minipage}{0.45\textwidth}
+    %    \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_db}
+    %    \caption{Sessile oak seedlings at the end of the experiment}
+    %    \label{fig:sm}
+    %\end{minipage}\hfill
+    %\begin{minipage}{0.45\textwidth}
+    %    \centering \includegraphics[width=1\textwidth]{pics/seedlings/seedlings_sm}
+    %    \caption{Norway spruce seedlings at the end of the experiment}
+    %    \label{fig:db}
+    %\end{minipage}\hfill
+%\end{figure}
+
+\heading{Wood anatomy}
+\begin{figure}
+    \begin{minipage}{0.5\textwidth}
+        \centering \includegraphics[width=20cm]{pics/anatomy/anatomy_db}
+        \caption*{Sessile oak cross-sections by treatments. 50x}
+        \label{fig:anatomy_db}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering \includegraphics[width=18cm]{pics/anatomy/anatomy_sm}
+        \caption*{Norway spruce cross-sections by treatments. 200x}
+        \label{fig:anatomy_sm}
+    \end{minipage}\hfill
+    \caption{\SI{10}{\micro\meter}-thin transverse sections of sessile oak (left; \SI{50}{\centi\meter} from apex) and Norway spruce (right; \SI{25}{\centi\meter} from apex). Scale bar: sessile oak -- \SI{}{\micro\meter}; Norway spruce -- \SI{}{\micro\meter}}
+    \label{fig:anatomy}
+\end{figure}
 \end{block}
 
 \end{column}
@@ -150,50 +165,62 @@
 \begin{column}{\colwidth}
 
 \begin{block}{Results}
-\heading{Wood anatomy}
-    \begin{figure}
-        \begin{minipage}{0.5\textwidth}
-            \centering \includegraphics[width=20cm]{pics/anatomy/anatomy_db}
-            \caption*{Sessile oak cross-sections by treatments. 50x}
-            \label{fig:anatomy_db}
-        \end{minipage}\hfill
-        \begin{minipage}{0.5\textwidth}
-            \centering \includegraphics[width=18cm]{pics/anatomy/anatomy_sm}
-            \caption*{Norway spruce cross-sections by treatments. 200x}
-            \label{fig:anatomy_sm}
-        \end{minipage}\hfill
-        \caption{\SI{10}{\micro\meter}-thin transverse sections of sessile oak (left; \SI{50}{\centi\meter} from apex) and Norway spruce (right; \SI{25}{\centi\meter} from apex). Scale bar: sessile oak -- \SI{}{\micro\meter}; Norway spruce -- \SI{}{\micro\meter}}
-        \label{fig:anatomy}
-    \end{figure}
+\heading{Sessile oak}
+Sessile oak reaction.
 
-\heading{Sessile oak xylem metrics comparison among treatments}
-    Norway spruce didn't exhibit much change in xylem structure, we only present sessile oak xylem metrics for the second year of the experiment (2022).
-    \begin{figure}
-        %\centering \includesvg[width=0.8\textwidth]{pics/oak_2021}
-        \input{pics/oak_box.tex}
-        \caption{
-            Xylem metrics of sessile oak xylem for the ring of 2022.
-            \textbf{a)} tree-ring width, \si{\micro\meter};
-            \textbf{b)} hydraulic vessel diameter, \si{\micro\meter} \parencite{tyree2002};
-            \textbf{c)} mean vessel area, \si{\micro\meter\squared};
-            \textbf{d)} total vessel lumen area, \%;
-            \textbf{e)} vessel density, \si{\per\milli\meter\squared};
-            \textbf{f)} vulnerability index after Carlquist \parencite{carlquist1977}. \\
-            \textbf{\textcolor{darkgray}{Dark grey fill}} -- dry (wet) variant without treatment;
-            \textbf{\textcolor{gray}{light grey fill}} -- dry (wet) variant with treatment. No sign. difference from dry (wet) variant without treatment;
-            \textbf{\textcolor{pink}{pink fill}} -- dry (wet) variant with treatment. Sign. difference from dry (wet) variant without treatment;
-            \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sign. different from (wet) variant of the same treatment;
-            \textbf{\textcolor{blue}{blue outline}} -- treatment of dry (wet) variant \emph{is} sign. different from (wet) variant of the same treatment.
-            $\alpha = 0.1$
-        }
-        \label{fig:oak_box}
-    \end{figure}
+\begin{figure}
+    %\centering \includesvg[width=0.8\textwidth]{pics/oak_2021}
+    \input{pics/oak_box.tex}
+    \caption{
+        Xylem metrics of sessile oak xylem for the ring of 2022.
+        \textbf{a)} tree-ring width, \si{\micro\meter};
+        \textbf{b)} hydraulic vessel diameter, \si{\micro\meter};
+        \textbf{c)} mean vessel area, \si{\micro\meter\squared};
+        \textbf{d)} total vessel lumen area, \%;
+        \textbf{e)} vessel density, \si{\per\milli\meter\squared};
+        \textbf{f)} vulnerability index after Carlquist \parencite{carlquist1977}. \\
+        \textbf{\textcolor{darkgray}{Dark grey fill}} -- dry (wet) variant without treatment;
+        \textbf{\textcolor{gray}{light grey fill}} -- dry (wet) variant with treatment. No sign. difference from dry (wet) variant without treatment;
+        \textbf{\textcolor{pink}{pink fill}} -- dry (wet) variant with treatment. Sign. difference from dry (wet) variant without treatment;
+        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sign. different from (wet) variant of the same treatment;
+        \textbf{\textcolor{blue}{blue outline}} -- treatment of dry (wet) variant \emph{is} sign. different from (wet) variant of the same treatment.
+        $\alpha = 0.1$
+    }
+    \label{fig:oak_box}
+\end{figure}
 
-\heading{Comments}
+\heading{Norway spruce}
+Norway spruce didn't exhibit much change in xylem structure. Only EW reacted.
+
+\begin{figure}
+    \input{pics/spruce_box.tex}
+    \caption{
+        Xylem metrics of Norway spruce xylem for the ring of 2022.
+        \textbf{a)} tree-ring width, \si{\micro\meter};
+        \textbf{b)} radial cell wall thickness, \si{\micro\meter};
+        \textbf{c)} radial tracheid diameter, \si{\micro\meter\squared};
+        \textbf{\textcolor{darkgray}{Dark grey fill}} -- dry (wet) variant without treatment;
+        \textbf{\textcolor{gray}{light grey fill}} -- dry (wet) variant with treatment. No sign. difference from dry (wet) variant without treatment;
+        %\textbf{\textcolor{pink}{pink fill}} -- dry (wet) variant with treatment. Sign. difference from dry (wet) variant without treatment;
+        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sign. different from (wet) variant of the same treatment;
+        \textbf{\textcolor{blue}{blue outline}} -- treatment of dry (wet) variant \emph{is} sign. different from (wet) variant of the same treatment.
+        $\alpha = 0.1$
+    }
+    \label{fig:spruce_box}
+\end{figure}
+\end{block}
+ 
+\begin{block}{Discussion}
+\begin{multicols}{2}
     \begin{enumerate}
-        \item asdasd
+        \item Differences in contrasting species reaction support the idea of iso- and anisohydry
+        \item All xylem metrics of Sessile oak and Norway spruce decreased after the first year of drought
+        \item Sessile oak mainly reacted to \textbf{r} in dry conditions and to \textbf{h} in wet conditions
+        \item Norway spruce only reacted to \textbf{h} by lower (higher?) early wood radial cell wall thickness and radial tracheid diameter; tree-ring width in dh and dhr (only effect with treatments?)
+        %\item Xylem vulnerability index after Carlquist \parencite{carlquist1977} suggests high degree of xeromorphy for dry variants (\leqslant 10) and mesomorphy for wet ones (\geqslant 30).
     \end{enumerate}
-
+%\AtNextBibliography{\footnotesize} \printbibliography
+\end{multicols}
 \end{block}
 
 \end{column}
@@ -201,20 +228,6 @@
 
 \begin{columns}[c]
 \begin{column}{0.96\paperwidth}
-
-\begin{block}{Discussion}
-\begin{multicols}{2}
-    \begin{enumerate}
-        \item All xylem metrics of Sessile oak and Norway spruce decreased after the first year of drought
-        \item Sessile oak mainly reacted to \textbf{r} in dry conditions and to \textbf{h} in wet conditions
-        \item Norway spruce only reacted to \textbf{h} by lower (higher?) early wood radial cell-wall thickness and radial tracheid diameter; tree-ring width in dh and dhr (only effect with treatments?)
-        \item Xylem vulnerability index after Carlquist \parencite{carlquist1977} suggests high degree of xeromorphy for dry variants (\leqslant 10) and mesomorphy for wet ones (\geqslant 30).
-    \end{enumerate}
-\AtNextBibliography{\footnotesize} \printbibliography
-\end{multicols}
-\end{block}
-
-\vfill
 
 \begin{block}{Acknoledgements}
 \small \centering

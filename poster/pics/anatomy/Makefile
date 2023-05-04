@@ -1,25 +1,6 @@
 export MAGICK_TMPDIR=${HOME} # /tmp is too small for processing huge files
 
-all: sm db
-sm:
-	montage -verbose \
-		-gravity North \
-		-pointsize 70 \
-		-label d d_sm*  \
-		-label dh dh_sm* \
-		-label dr dr_sm* \
-		-label dhr dhr_sm* \
-		-label w w_sm* \
-		-label wh wh_sm* \
-		-label wr wr_sm* \
-		-label whr whr_sm* \
-		-mode concatenate -crop x5000+0+0 \
-		-resize x1500+2+2 \
-		-tile 4x2 \
-		-geometry +10+10 \
-		anatomy_sm.jpg
-	mogrify -colorspace GRAY -channel RGB anatomy_sm.jpg
-
+all: db sm 
 db:
 	montage -verbose \
 		-gravity North \
@@ -38,3 +19,23 @@ db:
 		-geometry +10+10 \
     	anatomy_db.jpg
 	mogrify -colorspace GRAY -channel RGB anatomy_db.jpg
+
+sm:
+	montage -verbose \
+		-gravity North \
+		-pointsize 110 \
+		-label d d_sm*  \
+		-label dh dh_sm* \
+		-label dr dr_sm* \
+		-label dhr dhr_sm* \
+		-label w w_sm* \
+		-label wh wh_sm* \
+		-label wr wr_sm* \
+		-label whr whr_sm* \
+		-mode concatenate -crop 2300x5000+0+0 \
+		-resize x1500+2+2 \
+		-tile 4x2 \
+		-geometry +10+10 \
+		anatomy_sm.jpg
+	mogrify -colorspace GRAY -channel RGB anatomy_sm.jpg
+
