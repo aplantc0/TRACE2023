@@ -23,7 +23,7 @@ db:
 sm:
 	montage -verbose \
 		-gravity North \
-		-pointsize 110 \
+		-pointsize 100 \
 		-label d d_sm*  \
 		-label dh dh_sm* \
 		-label dr dr_sm* \
