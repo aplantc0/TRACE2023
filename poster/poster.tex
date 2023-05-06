@@ -9,34 +9,31 @@
 
 \usetheme{gemini}
 \usecolortheme{gemini}
+
 \usepackage{graphicx}
-%\usepackage{svg}
 \usepackage{booktabs}
-\usepackage{caption} % caption*{}
+\usepackage[format=plain,justification=justified,margin=1cm]{caption} % caption*{}
 \usepackage{multicol}
 \usepackage{tikz}
-%\usepackage{pgfplots}
-%\pgfplotsset{compat=1.14}
 \usepackage{siunitx} % units typesetting
 
-% biblio
-\usepackage[ 
-    bibencoding=auto, 
-    autolang=other, 
-    backend=biber, 
-    %citestyle=authoryear, 
-    %bibstyle=authoryear, 
-    style=numeric,
-    doi=false,
-    isbn=false,
-    url=false,
-    eprint=false,
-    %sorting=nty,
-    sorting=none,
-    ]{biblatex}
-\addbibresource{$BIB} % \textcite{} or \parencite{}
-%\addbibresource{poster.bib}
-\setbeamertemplate{bibliography item}[text] % ! article etc.
+% % biblio
+% \usepackage[ 
+%     bibencoding=auto, 
+%     autolang=other, 
+%     backend=biber, 
+%     %citestyle=authoryear, 
+%     %bibstyle=authoryear, 
+%     style=numeric,
+%     doi=false,
+%     isbn=false,
+%     url=false,
+%     eprint=false,
+%     %sorting=nty,
+%     sorting=none,
+%     ]{biblatex}
+% \addbibresource{$BIB} % \textcite{} or \parencite{}
+% \setbeamertemplate{bibliography item}[text] % ! article etc.
 
 %\setbeamerfont{caption}{size=\footnotesize}
 
@@ -85,16 +82,15 @@
 \begin{column}{\colwidth}
 
 \begin{alertblock}{Introduction}
-    \heading{Summary}
-        We analyzed the anatomical response of three-year-old seedlings of \textit{Quercus petraea} (Matt.) Liebl. (sessile oak; ring-porous) and \textit{Picea abies} (L.) H. Karst. (Norway spruce; conifer)  to crown reduction and application of hydrogel in substrate.
-        Our results demonstrate contrasting stem biomass allocation patterns in the two species.
-    \heading{Context}
-    %\small
-    \begin{itemize}
-        \item Following extensive deforestation caused by tree mortality, it is essential to have robust regeneration material that can withstand the initial establishment shock and effectively restore the area.
-        \item In a short-term experiment we treated 3-year-old plants with hydrogel application in substrate and 50\% crown reduction, and followed their development in dry and wet conditions over a two-year period (2021--2022).
-        \item We hypothesized that both treatments would have a beneficial or ameliorative effect on radial increment under dry conditions.
-    \end{itemize}
+\heading{Summary}
+    We analyzed the anatomical response of three-year-old seedlings of \textit{Quercus petraea} (Matt.) Liebl. (sessile oak; ring-porous) and \textit{Picea abies} (L.) H. Karst. (Norway spruce; conifer)  to crown reduction and application of hydrogel in substrate.
+    Our results demonstrate contrasting stem biomass allocation patterns in the two species.
+\heading{Context}
+\begin{itemize}
+    \item Following extensive deforestation caused by tree mortality, it is essential to have robust regeneration material that can withstand the initial establishment shock and effectively restore the area.
+    \item In a short-term experiment we treated 3-year-old plants with hydrogel application in substrate and 50\% crown reduction, and followed their development in dry and wet conditions over a two-year period (2021---2022).
+    \item We hypothesized that both treatments would have a beneficial or ameliorative effect on radial increment under dry conditions.
+\end{itemize}
 \end{alertblock}
 
 \begin{block}{Methodology}
@@ -110,11 +106,11 @@
 \begin{minipage}[t]{0.45\textwidth}
     %\small
     The experiment was run from May, 2021 to September, 2022.
-    Hydrogel (\textbf{h}; 1:15) and crown reduction (\textbf{r}; 50\%) were applied at the beginning of the experiment.
-    Different irrigation regime was maintained for dry (\textbf{d}) and wet (\textbf{w}) treatment groups (Fig. \ref{fig:vwc}).
+    Hydrogel (1:15) and 50\% crown reduction were applied at the beginning of the experiment.
+    Different irrigation regime was maintained for dry and wet treatment groups (Fig. \ref{fig:vwc}).
     At the end of the experiment, \SI{10}{\micro\meter}-thin stem transverse sections were cut on a rotary microtome and double-stained with safranin and Astra blue (Fig. \ref{fig:anatomy}).
     %Anatomical analysis was carried out for both rings of 2021 and 2022.
-    %In sessile oak, vessel area was measured and several related xylem metrics were derived (Fig. \ref{fig:oak_box}). In Norway spruce, radial cell wall thinkness and radial tracheid diameter were measured in three radial cell files, and were analyzed separately for early- and latewood (Fig. \ref{fig:spruce_box}).
+    %In sessile oak, vessel area was measured and several related xylem metrics were derived (Fig. \ref{fig:oak_box}). In Norway spruce, radial cell wall thickness and radial tracheid diameter were measured in three radial cell files, and were analyzed separately for early- and latewood (Fig. \ref{fig:spruce_box}).
 
 %Treatments are coded as follows:
 \begin{tabbing}
@@ -168,7 +164,7 @@
 
 \begin{block}{Results}
 \heading{Sessile oak}
-Sessile oak appeared to be very responsive to drought treatments.
+Sessile oak appeared to be very responsive to drought treatments by adjusting its vessel diameter and vessel density.
 
 \begin{figure}
     %\centering \includesvg[width=0.8\textwidth]{pics/oak_2021}
@@ -178,21 +174,21 @@ Sessile oak appeared to be very responsive to drought treatments.
         \textbf{a)} tree-ring width, \si{\micro\meter};
         \textbf{b)} hydraulic vessel diameter, \si{\micro\meter};
         \textbf{c)} mean vessel area, \si{\micro\meter\squared};
-        \textbf{d)} total vessel lumen area, \%;
-        \textbf{e)} vessel density, \si{\per\milli\meter\squared};
-        \textbf{f)} vulnerability index after Carlquist.
-        \textbf{\colorbox{white}{No fill}} -- dry (wet) variant without treatment;
+        %\textbf{d)} total vessel lumen area, \%;
+        %\textbf{e)} vessel density, \si{\per\milli\meter\squared};
+        %\textbf{f)} vulnerability index after Carlquist.
+        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sig. different from dry (wet) variant of the same treatment;
+        \textbf{\textcolor[RGB]{31,120,180}{blue outline}} -- treatment of dry (wet) variant \emph{is} sig. different from dry (wet) variant of the same treatment;
+        \textbf{\colorbox{white}{White fill}} -- dry (wet) variant without treatment;
         \textbf{\colorbox{gray!10}{light grey fill}} -- dry (wet) variant with treatment. No sig. difference from dry (wet) variant without treatment;
-        \textbf{\colorbox[RGB]{251,154,153}{red fill}} -- dry (wet) variant with treatment. Sig. difference from dry (wet) variant without treatment;
-        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sig. different from (wet) variant of the same treatment;
-        \textbf{\textcolor[RGB]{31,120,180}{blue outline}} -- treatment of dry (wet) variant \emph{is} sig. different from (wet) variant of the same treatment.
+        \textbf{\colorbox[RGB]{251,154,153}{red fill}} -- dry (wet) variant with treatment. Sig. difference from dry (wet) variant without treatment.
         $\alpha = 0.1$
     }
     \label{fig:oak_box}
 \end{figure}
 
 \heading{Norway spruce}
-Norway spruce didn't exhibit much change in xylem structure. Only dimensions of earlywood tracheids decreased in dry conditions due to the hydrogel application.
+Norway spruce didn't exhibit much change in xylem structure. Only dimensions of earlywood tracheids decreased in dry conditions with hydrogel application.
 
 \begin{figure}
     \input{pics/spruce_box.tex}
@@ -201,10 +197,10 @@ Norway spruce didn't exhibit much change in xylem structure. Only dimensions of 
         \textbf{a)} tree-ring width, \si{\micro\meter};
         \textbf{b)} earlywood radial cell wall thickness, \si{\micro\meter};
         \textbf{c)} earlywood radial tracheid diameter, \si{\micro\meter};
-        \textbf{\colorbox{white}{No fill}} -- dry (wet) variant without treatment;
-        \textbf{\colorbox{gray!10}{light grey fill}} -- dry (wet) variant with treatment. No sig. difference from dry (wet) variant without treatment;
-        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sig. different from (wet) variant of the same treatment;
-        \textbf{\textcolor[RGB]{31,120,180}{blue outline}} -- treatment of dry (wet) variant \emph{is} sig. different from (wet) variant of the same treatment.
+        \textbf{\textcolor{black}{black outline}} -- treatment of dry (wet) variant \emph{is not} sig. different from dry (wet) variant of the same treatment;
+        \textbf{\textcolor[RGB]{31,120,180}{blue outline}} -- treatment of dry (wet) variant \emph{is} sig. different from dry (wet) variant of the same treatment;
+        \textbf{\colorbox{white}{White fill}} -- dry (wet) variant without treatment;
+        \textbf{\colorbox{gray!10}{light grey fill}} -- dry (wet) variant with treatment. No sig. difference from dry (wet) variant without treatment.
         $\alpha = 0.1$
     }
     \label{fig:spruce_box}
@@ -212,15 +208,13 @@ Norway spruce didn't exhibit much change in xylem structure. Only dimensions of 
 \end{block}
 
 \begin{block}{Discussion}
+\setlength{\columnsep}{20pt}
 \begin{multicols}{2}
     \begin{enumerate}
-        \item After two years of artificial drought, species displayed contrasting plant hydraulic strategies. Sessile oak, unlike Norway spruce, reacted to dry conditions markedly.
-        \item Without any treatment, sessile oak reduced tree-ring width in dry conditions, whereas Norway spruce did not.
-        \item Only crown reduction facilitated the growth of sessile oak in dry conditions by lowering hydraulic diameter and vessel density.
-            %However, the ratio of hydraulic diameter and vessel density (Carlquist's vulnerabily index) suggests positive effect of hydrogel in both dry and wet conditions.
-            Additionally, sessile oak only reacted to hydrogel in wet conditions.
-        \item Despite Norway spruce reacted to hydrogel application by lowering tree-ring width, radial cell wall thickness and radial tracheid diameter of earlywood in dry conditions, no effect of drought itself was observed.
-            This suggests the presence of another source of variability.
+        \item After two years of artificial drought, species displayed contrasting plant hydraulic strategies. Sessile oak, unlike Norway spruce, reacted to dry conditions markedly, increasing the diameter of conduits and their density.
+        \item Crown reduction in dry conditions and its combination with hydrogel in both dry and wet conditions helped sessile oak to mitigate the effect of drought by lowering vessel diameter. Additionally, sessile oak reacted to crown reduction in dry conditions and to hydrogel in both dry and wet conditions by lowering vessel density.
+        \item In Norway spruce, neither drought nor treatments had an effect. Though, in dry conditions with hydrogel Norway spruce had lower tree-ring width, cell wall thickness and tracheid diameter of earlywood tracheids than in wet conditions, hydrogel did not reduce drought effect.
+        %\item Thus, Norway spruce responded to drought by reducing the size of the tracheids unlike sessile oak, which increased the size of vessels and their density; both treatments facilitated the growth of the latter in dry conditions.
     \end{enumerate}
 %\AtNextBibliography{\footnotesize} \printbibliography
 \end{multicols}
