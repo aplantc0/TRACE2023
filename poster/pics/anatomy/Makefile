@@ -1,4 +1,4 @@
-export MAGICK_TMPDIR=${HOME} # /tmp is too small for processing huge files
+export MAGICK_TMPDIR=${HOME} # /tmp is too small for imagemagick cache
 
 all: db sm 
 db:
